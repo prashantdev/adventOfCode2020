@@ -107,14 +107,11 @@ def seatingIteration(lay):
     newLay=createLayout()
     for rowIndex in range(len(lay)):
         row = lay[rowIndex]
-        #print("rowIndex: "+str(rowIndex))
         for colIndex in range(len(row)):
             numFull=getNumFullSurroundingSeats(lay, rowIndex, colIndex)
             if numFull==0:#set full
-                #print("rowIndex: "+str(rowIndex)+"colIndex: "+str(colIndex)+" empty")
                 setSeat(lay, newLay, rowIndex, colIndex, '#')
             elif numFull>=4:#set empty
-                #print("rowIndex: "+str(rowIndex)+"colIndex: "+str(colIndex)+" NOT empty")
                 setSeat(lay, newLay, rowIndex, colIndex, 'L')
             else:#copy old seat
                 setSeat(lay, newLay, rowIndex, colIndex, lay[rowIndex][colIndex])

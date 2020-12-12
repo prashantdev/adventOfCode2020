@@ -49,7 +49,7 @@ class Crazy:
 
     def printMovement(self):
         waypoint="waypoint: eWay="+str(self.eWay)+" wWay="+str(self.wWay)+" nWay="+str(self.nWay)+" sWay="+str(self.sWay)
-        print(waypoint+" ; position: e+w="+str(abs(self.eMoved-self.wMoved))+" n+s="+str(abs(self.nMoved-self.sMoved)))
+        #print(waypoint+" ; position: e+w="+str(abs(self.eMoved-self.wMoved))+" n+s="+str(abs(self.nMoved-self.sMoved)))
         
     def move(self, amt):
         self.eMoved=self.eMoved+self.eWay*amt

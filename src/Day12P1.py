@@ -61,7 +61,7 @@ for line in directions:
     elif inst=='F':
         move(num)
     
-    printMovement()
+    #printMovement()
 
 print (computeDistance())
 
